@@ -1,0 +1,16 @@
+body {
+  background-color: #f8d1b4;
+}
+
+main {
+  margin: 100px auto;
+}
+
+.app-footer {
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 50px auto;
+  font-weight: 400;
+}
