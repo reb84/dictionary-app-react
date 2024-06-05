@@ -1,16 +1,27 @@
 body {
-  background-color: #f8d1b4;
+  background: #f9f8fe;
 }
 
-main {
-  margin: 100px auto;
+a {
+  color: #9670f4;
 }
 
-.app-footer {
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.App-header {
+  margin: 30px 0;
+}
+
+.App-logo {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.App-footer {
   text-align: center;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 50px auto;
-  font-weight: 400;
+  margin: 30px 0;
 }
