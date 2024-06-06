@@ -1,8 +1,8 @@
 .Meaning h3 {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.5;
-  font-weight: bold;
-  color: #6d65a0;
+  font-weight: 500;
+  color: #98a65d;
 }
 
 .Meaning .example {

@@ -1,6 +1,14 @@
 .Results h2 {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 500;
   line-height: 1.5;
-  color: #6d65a0;
+  color: #7d894b;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.Phonetic {
+  font-size: 36px;
+  color: #4a4a49;
+  opacity: 0.8;
 }
