@@ -26,7 +26,8 @@ export default function App() {
             >
               open-sourced
             </a>{" "}
-            and hosted on <a href="https://dictionary-app-react-orpin.vercel.app/">Vercel</a>
+            and hosted on <a href="https://dictionary-app-react-orpin.vercel.app/">Vercel</a>.<br />
+            Photos sourced from <a href="https://www.pexels.com/">Pexels</a>.
           </small>
         </footer>
       </div>
