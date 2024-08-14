@@ -11,7 +11,14 @@ export default function Dictionary(props) {
   let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
-    setResults(response.data);
+    if (response.data && response.data.meanings && response.data.meanings.length > 0) {
+      setResults(response.data);
+      searchPexels(); // Only trigger image search if the word is valid
+    } else {
+      alert("Word not found. Please check the spelling or try another word.");
+      setResults(null); // Clear previous results if any
+      setPhotos(null); // Clear photos if any
+    }
   }
 
   function handlePexelsResponse(response) {
@@ -22,7 +29,9 @@ export default function Dictionary(props) {
     const apiKey = "22de0057ea42aa649cbcof0e3b1te784";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+  }
 
+  function searchPexels() {
     let pexelsApiKey = "nmVqE7S3CcliQOO76akCJZBFuuUl1UBgFtHrSk9M4j9AraCikWV70rkA";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
     let headers = { Authorization: `${pexelsApiKey}` };
